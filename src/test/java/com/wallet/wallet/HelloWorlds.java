@@ -10,6 +10,6 @@ public class HelloWorlds {
 
   @Test
   public void textHelloWorld() {
-    assertEquals(1,1);
+    assertEquals(1, 1);
   }
 }
