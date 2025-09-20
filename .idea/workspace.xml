@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8300a289-36c7-43a8-aec7-92c7618025f2" name="Changes" comment="feature: starter project">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Wallet_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/WalletApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WalletApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/repository/UserRepositoryTest.java" afterDir="false" />
+    <list default="true" id="8300a289-36c7-43a8-aec7-92c7618025f2" name="Changes" comment="feature: TDD User">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wallet/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,6 +49,7 @@
     "Application.Main.executor": "Run",
     "Application.WalletApplication.executor": "Run",
     "JUnit.UserRepositoryTest.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
     "JUnit.WalletApplicationTests.executor": "Debug",
     "Maven.Wallet [clean].executor": "Run",
     "Maven.Wallet [compile].executor": "Run",
@@ -81,7 +76,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserServiceTest">
     <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Wallet" />
       <extension name="coverage">
@@ -97,8 +92,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Wallet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserRepositoryTest" />
       </list>
     </recent_temporary>
@@ -112,6 +123,19 @@
       <option name="presentableId" value="Default" />
       <updated>1758341623436</updated>
     </task>
+    <task id="LOCAL-00001" summary="feature: TDD User">
+      <option name="closed" value="true" />
+      <created>1758370794462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758370794462</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature: TDD User" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: TDD User" />
   </component>
 </project>
