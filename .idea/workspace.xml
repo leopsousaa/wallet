@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8300a289-36c7-43a8-aec7-92c7618025f2" name="Changes" comment="feature: TDD User">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="8300a289-36c7-43a8-aec7-92c7618025f2" name="Changes" comment="feature: TDD UserService">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wallet/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
   </component>
   <component name="ProjectColorInfo">{
@@ -48,6 +50,8 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.WalletApplication.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.UserControllerTest.testSave.executor": "Run",
     "JUnit.UserRepositoryTest.executor": "Run",
     "JUnit.UserServiceTest.executor": "Run",
     "JUnit.WalletApplicationTests.executor": "Debug",
@@ -76,7 +80,38 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="JUnit.UserControllerTest.testSave">
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Wallet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Wallet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Wallet" />
       <extension name="coverage">
@@ -109,6 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest.testSave" />
+        <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserRepositoryTest" />
       </list>
@@ -131,11 +168,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758370794462</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feature: TDD UserService">
+      <option name="closed" value="true" />
+      <created>1758371547295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758371547295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature: TDD User" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: TDD User" />
+    <MESSAGE value="feature: TDD UserService" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: TDD UserService" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/wallet/controller/UserController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
