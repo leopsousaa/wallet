@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8300a289-36c7-43a8-aec7-92c7618025f2" name="Changes" comment="feature: TDD UserController and UserDTO">
+    <list default="true" id="8300a289-36c7-43a8-aec7-92c7618025f2" name="Changes" comment="feature: TDD UserController and UserDTO errors validators">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/postgresql/V1__init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wallet/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wallet/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wallet/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wallet/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wallet/response/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wallet/response/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controller/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,131 +44,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.WalletApplication.executor": "Run",
-    "JUnit.UserControllerTest.executor": "Run",
-    "JUnit.UserControllerTest.testSave.executor": "Debug",
-    "JUnit.UserControllerTest.testSaveInvalidRequest.executor": "Run",
-    "JUnit.UserControllerTest.testSaveInvalidUser.executor": "Debug",
-    "JUnit.UserRepositoryTest.executor": "Run",
-    "JUnit.UserServiceTest.executor": "Run",
-    "JUnit.WalletApplicationTests.executor": "Debug",
-    "Maven.Wallet [clean].executor": "Run",
-    "Maven.Wallet [compile].executor": "Run",
-    "Maven.Wallet [deploy].executor": "Run",
-    "Maven.Wallet [install].executor": "Run",
-    "Maven.Wallet [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.Wallet [org.apache.maven.plugins:maven-install-plugin:2.5.2:install].executor": "Run",
-    "Maven.Wallet [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
-    "Maven.Wallet [package].executor": "Run",
-    "Maven.Wallet [site].executor": "Run",
-    "Maven.Wallet [test].executor": "Run",
-    "Maven.Wallet [validate].executor": "Run",
-    "Maven.Wallet [verify].executor": "Run",
-    "Maven.wallet [org.apache.maven.plugins:maven-install-plugin:2.5.2:install].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/leosousa/Documents/Wallet/src/main/java/org/wallet/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WalletApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testSave.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserControllerTest.testSaveInvalidRequest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testSaveInvalidUser.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletApplicationTests.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.Wallet [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [org.apache.maven.plugins:maven-install-plugin:2.5.2:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Wallet [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wallet [org.apache.maven.plugins:maven-install-plugin:2.5.2:install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/leosousa/Documents/Wallet/src/main/java/org/wallet/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.UserControllerTest">
-    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wallet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.UserControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wallet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="testSave" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.testSaveInvalidRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wallet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="testSaveInvalidRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.testSaveInvalidUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wallet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="testSaveInvalidUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wallet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="JUnit.UserControllerTest.testSaveInvalidUser" />
-        <item itemvalue="JUnit.UserControllerTest.testSaveInvalidRequest" />
-        <item itemvalue="JUnit.UserControllerTest.testSave" />
-        <item itemvalue="JUnit.UserServiceTest" />
-      </list>
-    </recent_temporary>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -204,14 +113,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758538275226</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature: TDD UserController and UserDTO errors validators">
+      <option name="closed" value="true" />
+      <created>1758544021649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758544021649</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature: TDD User" />
     <MESSAGE value="feature: TDD UserService" />
     <MESSAGE value="feature: TDD UserController and UserDTO" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: TDD UserController and UserDTO" />
+    <MESSAGE value="feature: TDD UserController and UserDTO errors validators" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: TDD UserController and UserDTO errors validators" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
