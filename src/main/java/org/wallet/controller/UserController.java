@@ -12,6 +12,7 @@ import org.wallet.dto.UserDTO;
 import org.wallet.entity.User;
 import org.wallet.response.Response;
 import org.wallet.service.UserService;
+import org.wallet.util.Bcript;
 
 import javax.validation.Valid;
 
@@ -46,7 +47,7 @@ public class UserController {
         u.setId(dto.getId());
         u.setName(dto.getName());
         u.setEmail(dto.getEmail());
-        u.setPassword(dto.getPassword());
+        u.setPassword(Bcript.getHash(dto.getPassword()));
 
         return u;
     }
@@ -57,7 +58,6 @@ public class UserController {
         dto.setId(u.getId());
         dto.setName(u.getName());
         dto.setEmail(u.getEmail());
-        dto.setPassword(u.getPassword());
 
         return dto;
     }
